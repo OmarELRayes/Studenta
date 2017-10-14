@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/lib/com.android.navtest"
+    android:orientation="vertical"
+    tools:context="com.example.android.navtest.AskFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+        <com.github.pavlospt.CircleView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cv_titleText="ASK!"
+            app:cv_subtitleText=" "
+            app:cv_titleSize="45dp"
+            app:cv_subtitleSize="9dp"
+            app:cv_titleColor="@color/colorPrimary"
+            app:cv_strokeColorValue="@color/colorSecondaryText"
+            app:cv_backgroundColorValue="@color/colorAccent"
+            app:cv_fillColor="@color/colorIcons"
+            app:cv_fillRadius="0.9"
+            app:cv_strokeWidthSize="5"
+            />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/><!--dh sabt zy ma hwa bs el-view pager bitzbt f el-code -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+</LinearLayout>

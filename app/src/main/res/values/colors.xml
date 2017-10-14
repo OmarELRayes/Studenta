@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!--<color name="colorPrimary">#F44336</color>-->
+    <color name="colorPrimary">#e55635</color>
+    <color name="colorPrimaryDark">#e44723</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorAccent">#e55635</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+ dc2900
+ e5e200
+
+</resources>

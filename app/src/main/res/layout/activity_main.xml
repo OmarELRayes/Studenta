@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.navtest.MainActivity"
+    android:theme="@style/AppTheme">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_background_gradient"
+        android:alpha=".5">
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:src="@drawable/studenta"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="100sp" />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="10dp"
+                android:onClick="loginForm"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#e55635"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/button_shape_login"
+                android:onClick="signupForm"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

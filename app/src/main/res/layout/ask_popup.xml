@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="1"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingTop="50dp"
+        android:text="Sent to"
+        android:textColor="#000000"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.11"
+
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/titlee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingTop="25dp"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your title"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingTop="25dp"
+        android:text="Question"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter your question"
+        android:inputType="textImeMultiLine"
+        />
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_twitter"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:button_icon="@drawable/plus"
+        app:button_icon_height="40dp"
+        app:button_icon_width="40dp"
+        app:hide_text="Add reminder"
+        app:magic_button_size="80dp"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.12" />
+
+</LinearLayout>
